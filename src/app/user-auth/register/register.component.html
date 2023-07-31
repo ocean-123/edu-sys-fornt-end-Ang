@@ -1,0 +1,39 @@
+<div class="bg-img">
+    <div class="content">
+        <header>Registration Form</header>
+        <form  [formGroup]="registerForm" (submit)="registerUser()">
+            <div class="field">
+                <span class="fa fa-user"></span>
+                <input type="text" required placeholder="Username" formControlName="username">
+            </div>
+            <div class="field space">
+                <span class="fa fa-user"></span>
+                <input type="text" required placeholder="First Name" formControlName="first_name">
+            </div>
+            <div class="field space">
+                <span class="fa fa-user"></span>
+                <input type="text" required placeholder="Last Name" formControlName="last_name">
+            </div>
+            <div class="field space">
+                <span class="fa fa-envelope"></span>
+                <input type="email" required placeholder="Email" formControlName="email">
+            </div>
+            <div class="field space">
+                <span class="fa fa-phone"></span>
+                <input type="tel" required placeholder="Mobile Number" formControlName="mobileNo">
+            </div>
+            <div class="field space ">
+                <span class="fa fa-lock"></span>
+                <input type="password" class="password" required placeholder="Password" formControlName="password">
+            </div>
+            <div class="field space">
+                <span class="fa fa-lock"></span>
+                <input type="password" class="password" required placeholder="Confirm Password" formControlName="confirm_password">
+            </div>
+            <div class="field space">
+                <input type="submit" value="REGISTER">
+            </div>
+        </form>
+    </div>
+</div>
+

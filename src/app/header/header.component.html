@@ -1,0 +1,111 @@
+<header class=" main_header">
+<div class="top_bar py-1">
+    <div class="container ">
+        <div class="top_bar_inner clearfix">
+            <!-- Top Left Bar Info -->
+            <div class="top_left_bar_info float-start ">
+                <span class="top_email me-3">
+                    <a href="mailto:info@thenext.edu.np" >
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        info@thenext.edu.np
+                    </a>
+                </span>
+                <span class="top_phone">
+                    <a href="tel:977-01-5970268">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        +977-01-5970268
+                    </a>
+                </span>
+            </div>
+            <!-- Top Right Bar Info -->
+            <div class="top_right_bar_info float-end">
+                <div class="top_social_icons ">
+                    <!-- Add social media links here -->
+                    <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter tticon"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
+
+<div class="bottom_bar">
+  <!-- Navbar -->
+  <nav class="container py-3">
+    <div class="d-flex justify-content-around  ">
+      <!-- Navbar brand (Logo) -->
+      <div class="p-2 ">
+        <a class="navbar-brand" routerLink="/">
+          <img src="../../assets/logo.jpg" height="100" alt="" loading="lazy" style="margin-top: -1px;" />
+        </a>
+       
+
+      </div>
+      <!-- Navigation Items -->
+      <div class="p-2 ms-auto ">
+        <ul ngbNav #nav="ngbNav" [activeId]="2" class="nav-tabs">
+         
+          <li ngbDropdown class="nav-item" role="presentation">
+            <button type="button" class="nav-link" ngbDropdownToggle>Dropdown</button>
+            <div ngbDropdownMenu>
+              <button ngbDropdownItem>Action</button>
+              <button ngbDropdownItem>Another action</button>
+              <button ngbDropdownItem>Something else here</button>
+              <div class="dropdown-divider"></div>
+              <button ngbDropdownItem>Separated link</button>
+            </div>
+          </li>
+          <li ngbDropdown class="nav-item" role="presentation">
+            <button type="button" class="nav-link" ngbDropdownToggle>Dropdown</button>
+            <div ngbDropdownMenu>
+              <button ngbDropdownItem>Action</button>
+              <button ngbDropdownItem>Another action</button>
+              <button ngbDropdownItem>Something else here</button>
+              <div class="dropdown-divider"></div>
+              <button ngbDropdownItem>Separated link</button>
+            </div>
+          </li>
+          <li ngbDropdown class="nav-item" role="presentation">
+            <button type="button" class="nav-link" ngbDropdownToggle>Dropdown</button>
+            <div ngbDropdownMenu>
+              <button ngbDropdownItem>Action</button>
+              <button ngbDropdownItem>Another action</button>
+              <button ngbDropdownItem>Something else here</button>
+              <div class="dropdown-divider"></div>
+              <button ngbDropdownItem>Separated link</button>
+            </div>
+          </li>
+          <li ngbDropdown class="nav-item" role="presentation">
+            <button type="button" class="nav-link" ngbDropdownToggle>Dropdown</button>
+            <div ngbDropdownMenu>
+              <button ngbDropdownItem>Action</button>
+              <button ngbDropdownItem>Another action</button>
+              <button ngbDropdownItem>Something else here</button>
+              <div class="dropdown-divider"></div>
+              <button ngbDropdownItem>Separated link</button>
+            </div>
+          </li>
+        </ul>
+        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+      </div>
+
+      <!-- Register and Login Buttons -->
+      <div class="p-2">
+        <button type="button" routerLink="/login" class="btn btn-link px-3 me-2">Login</button>
+        <button type="button" routerLink="/register" class="btn btn-primary me-3">Sign up for free</button>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+</div>
+
+
+
+
+</header>
+
